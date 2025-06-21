@@ -1,0 +1,187 @@
+/* Estilos únicos para la página de contacto */
+.contact-page {
+    background-color: #f8f9fa;
+    min-height: calc(100vh - 120px);
+    padding-bottom: 40px;
+}
+
+.contact-header {
+    background: linear-gradient(135deg, var(--primary-button-bg), var(--secondary-bg));
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor del formulario */
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Estilos para el formulario */
+#form-contacto {
+    background-color: white;
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#form-contacto:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    transform: translateY(-5px);
+}
+
+#form-contacto h2 {
+    color: var(--primary-button-bg);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+#form-contacto h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--primary-button-bg);
+}
+
+/* Estilos para los campos del formulario */
+.form-label {
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.form-control, .form-select {
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: none;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-button-bg);
+    box-shadow: 0 0 0 0.25rem rgba(74, 111, 165, 0.25);
+}
+
+textarea.form-control {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Estilo para el botón de enviar */
+.btn-contact {
+    background-color: var(--primary-button-bg);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 1rem;
+    box-shadow: 0 4px 8px rgba(74, 111, 165, 0.3);
+}
+
+.btn-contact:hover {
+    background-color: var(--primary-hover-bg);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(74, 111, 165, 0.4);
+}
+
+.btn-contact:active {
+    transform: translateY(0);
+}
+
+/* Estilos para la sección de footer de contacto */
+.contact-footer {
+    background-color: #343a40;
+    color: white;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+.contact-footer h3 {
+    color: var(--primary-hover-bg);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.contact-footer p {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Efectos de animación */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#form-contacto {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .contact-header {
+        padding: 2rem 0;
+    }
+    
+    .contact-header h1 {
+        font-size: 2rem;
+    }
+    
+    #form-contacto {
+        padding: 1.5rem;
+    }
+    
+    #form-contacto h2 {
+        font-size: 1.5rem;
+    }
+    
+    .btn-contact {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-header {
+        padding: 1.5rem 0;
+    }
+    
+    .contact-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    #form-contacto {
+        padding: 1.25rem;
+    }
+    
+    .form-control, .form-select {
+        padding: 10px 12px;
+    }
+}

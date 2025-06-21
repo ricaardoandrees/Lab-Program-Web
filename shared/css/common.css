@@ -1,0 +1,304 @@
+@import url("shared/css/var.css");
+
+/* Reset y estilos base */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-family);
+  font-size: 16px;
+}
+
+body {
+  background: var(--primary-bg);
+  color: var(--main-text-color);
+  line-height: 1.6;
+}
+
+/* Fluid typography */
+h1 { font-size: clamp(1.75rem, 5vw, 2.5rem); }
+h2 { font-size: clamp(1.5rem, 4vw, 2rem); }
+h3 { font-size: clamp(1.25rem, 3vw, 1.5rem); }
+p  { font-size: clamp(1rem, 2.5vw, 1.25rem); }
+
+/* Header */
+header {
+  background: var(--secondary-bg);
+  padding: 1rem;
+  text-align: center;
+}
+
+.header-principal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #b9d2eb, #b8cfd1);
+  text-shadow: 1px 1px 2px rgba(58, 37, 37, 0.3);
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.header-principal ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 1rem;
+}
+
+.header-principal a {
+  color: rgb(15, 10, 10);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.header-principal a:hover {
+  background-color: var(--primary-button-bg);
+  color: var(--main-text-color);
+}
+
+/* Main grid setup */
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Cards o secciones */
+.Proyectos,
+.Educacion,
+.Tecnologias,
+.Sobremi,
+.Sobremi-Musica {
+  background-color: #f7f9fc;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: var(--box-shadow);
+}
+mark {
+  background-color: transparent;
+  color: inherit;
+}
+
+/* Fondos específicos */
+.Educacion { background-color: rgb(188, 247, 232); }
+.Tecnologias { background-color: rgb(187, 190, 236); }
+.Sobremi,
+.Sobremi-Musica { background-color: rgb(199, 225, 236); }
+
+/* Imágenes responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  
+}
+
+/* Imágenes en tablas */
+td img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  aspect-ratio: 1 / 1;
+
+}
+
+td img:hover {
+  transform: scale(1.5);
+  box-shadow: var(--box-shadow);
+}
+
+/* Listas */
+ul, ol {
+  list-style: square inside;
+  margin-bottom: 1rem;
+}
+
+/* Formularios */
+form,
+fieldset {
+  background-color: #f7f9fc;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  margin-bottom: 15px;
+  padding: 20px;
+}
+
+legend {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: var(--primary-button-bg);
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--primary-button-bg);
+}
+
+.botonesenviar {
+  background-color: var(--primary-button-bg);
+  color: var(--main-text-color);
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 100%;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.botonesenviar:hover {
+  background-color: var(--primary-hover-bg);
+  transform: scale(1.05);
+}
+
+/* Botón de chat */
+.chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--primary-button-bg);
+  color: var(--main-text-color);
+  padding: 12px 18px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+  transition: background-color 0.3s;
+  z-index: 1000;
+}
+
+.chat-button:hover {
+  background-color: var(--primary-hover-bg);
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(37, 44, 73);
+  color: var(--main-text-color);
+  padding: 1rem;
+}
+
+
+
+#contactarte {
+  color: var(--primary-hover-bg);
+}
+
+/* Ajustes para tablets (hasta 1024px) */
+@media (max-width: 1024px) {
+  main {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    padding: 15px;
+  }
+  .header-principal {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+  }
+}
+
+/* Ajustes para móviles y dispositivos pequeños (hasta 768px) */
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+  .header-principal {
+    flex-direction: column;
+    font-size: clamp(1.25rem, 4vw, 1.5rem);
+    gap: 10px;
+    text-align: center;
+  }
+  .header-principal ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+ 
+  .Proyectos,
+  .Educacion,
+  .Tecnologias,
+  .Sobremi,
+  .Sobremi-Musica {
+    grid-column: 1 / -1;
+  }
+}
+
+.navbar-nav .nav-link {
+  color: var(--main-text-color);
+  transition: background-color 0.3s, color 0.3s;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: var(--primary-button-bg);
+  color: var(--main-text-color);
+}
+@keyframes pulsate {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes desaparecer {
+  0% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-100px); visibility: hidden; }
+}
+
+.chat-button:active {
+  animation: pulsate 0.5s, desaparecer 5s ease 1s forwards;
+}
+
+
+header h1:active {
+  transform:
+    translateX(5px)
+    rotate(5deg)
+    scale(1.1)
+    skew(5deg, 1deg);
+}
+/* Efecto hover para las cards */
+.custom-card {
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+.custom-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+    z-index: 10;
+}
+
+/* Ajustes para cards */
+.custom-card .card-header {
+    border-bottom: none;
+}
+
+/* Clases para altura igualada */
+.equal-height {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.equal-height .card-body {
+    flex-grow: 1;
+}

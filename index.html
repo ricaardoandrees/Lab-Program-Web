@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Ricardo Mejia</title>
+    <!-- Importar CSS -->
+    <link rel="stylesheet" href="/shared/css/common.css">
+    <link rel="stylesheet" href="/shared/css/var.css">
+    <!-- Fuente de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header responsive -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-titles">
+                <h1>Portafolio</h1>
+                <h2>de Ricardo Mejia</h2>
+            </div>
+            <!--<button class="menu-toggle" aria-label="Menú móvil">☰</button>-->
+        </div>
+    </header>
+
+   <nav class="navbar navbar-expand-lg" style="background-color: var(--secondary-bg);">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="color: var(--main-text-color);"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarContenido">
+      <ul class="navbar-nav nav-list">
+        <li class="nav-item"><a class="nav-link" href="#Ultimos-Proyectos">Últimos Proyectos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Educacion">Educación</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Tecnologias">Tecnologías</a></li>
+        <li class="nav-item"><a class="nav-link" href="/views/contact/contacto.html">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Definiciones">Definiciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="configuracion.html#Perfiles">Colegas</a></li>
+        <li class="nav-item"><a class="nav-link" href="/views/config/configuracion.html">Configuración</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <!-- Contenido principal -->
+    <main class="main-container">
+        <!-- Sección de proyectos -->
+        <section id="Ultimos-Proyectos" class="Proyectos">
+            <h2><mark>Últimos proyectos</mark></h2>
+            
+            <article class="project-card">
+                <div class="project-content">
+                    <h3>Juego: Larry The Bubble</h3>
+                    <a href="https://github.com/ricaardoandrees/CaracasGameJam2025" target="_blank" class="project-link">
+                        Visitar repositorio en GitHub
+                    </a>
+                    <img src="/assets/imagenes/image.png" alt="Gameplay de Larry The Bubble" class="project-image">
+                    
+                    <div class="project-details">
+                        <p><strong>Tecnologías utilizadas:</strong> GDScript, Adobe Illustrator, Godot V4.0</p>
+                        <p>Participé en equipo en la Caracas Game Jam 2024, donde desarrollamos un juego multiplataforma cuyo protagonista es una burbuja con la misión de obtener un trofeo. Mi rol principal fue el desarrollo del backend del juego.</p>
+                    </div>
+                    
+                    <figure class="project-video">
+                        <video controls class="responsive-video">
+                            <source src="/assets/extras/larry-gameplay.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                        <figcaption>Video demostrativo de Larry The Bubble</figcaption>
+                    </figure>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-content">
+                    <h3>Juego: Supervivencia Ambiental</h3>
+                    <a href="https://github.com/EwaldoChikito/Algorithm-and-Data-Structures-Proyect" target="_blank" class="project-link">
+                        Visitar repositorio en GitHub
+                    </a>
+                    
+                    <figure>
+                        <img src="assets\imagenes\image2.png" alt="Interfaz de Supervivencia Ambiental" class="project-image">
+                        <figcaption>Interfaz del juego Supervivencia Ambiental</figcaption>
+                    </figure>
+                    
+                    <div class="project-details">
+                        <p><strong>Tecnologías utilizadas:</strong> C++, Visual Studio Code, Notion</p>
+                        <p>Juego multijugador estilo Monopoly desarrollado para la materia Estructura de Datos. Implementamos listas enlazadas para manejar jugadores, propiedades y dinámicas del juego.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Sección de educación -->
+        <section id="Educacion" class="Educacion">
+            <h2><mark>Educación</mark></h2>
+            <article class="education-card">
+                <ul class="education-list">
+                    <li>Graduado de Colegio La Concepción de Montalbán</li>
+                    <li>Estudiante de Ingeniería Informática en la UCAB</li>
+                    <li>Estudiante del Centro Americano Venezolano</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Sección de tecnologías -->
+        <section id="Tecnologias" class="Tecnologias">
+            <h2><mark>Tecnologías</mark></h2>
+            <article class="tech-card">
+                <div class="Proyectos">
+                    <h4>Tecnologías en aprendizaje:</h4>
+                    <ul class="tech-list">
+                        <li>Typescript</li>
+                        <li>JavaScript</li>
+                        <li>Spring Boot</li>
+                        <li>Angular</li>
+                    </ul>
+               
+                
+                
+                    <h4>Tecnologías dominadas:</h4>
+                    <div class="table-responsive">
+                        <table class="tech-table">
+                            <thead>
+                                <tr>
+                                    <th>Lenguaje</th>
+                                    <th class="hide-on-mobile">Lugar de aprendizaje</th>
+                                    <th>Nivel</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>C++</td>
+                                    <td class="hide-on-mobile">UCAB y Udemy</td>
+                                    <td>★★★★★</td>
+                                </tr>
+                                <tr>
+                                    <td>Java</td>
+                                    <td class="hide-on-mobile">UCAB y Code Academy</td>
+                                    <td>★★★★☆</td>
+                                </tr>
+                                <tr>
+                                    <td>GDScript</td>
+                                    <td class="hide-on-mobile">YouTube</td>
+                                    <td>★★★★☆</td>
+                                </tr>
+                                <tr>
+                                    <td>Python</td>
+                                    <td class="hide-on-mobile">UCAB</td>
+                                    <td>★★★☆☆</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                
+            </article>
+        </section>
+
+        <!-- Sobre mí -->
+        <aside class="Sobremi">
+            <h2><mark>Sobre mí</mark></h2>
+            <article>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Mi nombre es Ricardo Mejía, tengo 18 años y actualmente curso el cuarto semestre de Ingeniería Informática en la Universidad Católica Andrés Bello.</p>
+                        <p>Soy originario de Caracas, Venezuela, y me considero un apasionado por los algoritmos y el arte de encontrar el lado ingenioso y divertido en las cosas.</p>
+                    </div>
+                    <img src="/assets/imagenes/pasaporte.jpg" alt="Foto de Ricardo Mejía" class="profile-image">
+                </div>
+            </article>
+        </aside>
+
+        <!-- Recomendación musical -->
+        <section id="CancionRecomendada" class="Sobremi-Musica">
+            <h3>Canción recomendada</h3>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/N6urtOBhUAw" title="Canción recomendada por Ricardo" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer responsive -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-contact">
+                <h3 id="Contacto"><mark>Contacto</mark></h3>
+                <p><i class="icon-instagram"></i> @ricaardoandrees</p>
+                <p><i class="icon-email"></i> ricaardoandresma@gmail.com</p>
+            </div>
+            
+            <div class="footer-definitions">
+                <h3 id="Definiciones"><mark>Definiciones</mark></h3>
+                <dl>
+                    <dt>API</dt>
+                    <dd>Interfaz de programación de aplicaciones</dd>
+                    <dt>SEO</dt>
+                    <dd>Optimización para motores de búsqueda</dd>
+                </dl>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón de chat flotante -->
+    <button class="chat-button" aria-label="Abrir chat de contacto">
+        <span class="chat-icon">💬</span>
+        <span class="chat-text">Chat</span>
+    </button>
+
+    <!-- Script para funcionalidad responsive -->
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-list').classList.toggle('active');
+        });
+    </script>
+    
+</body>
+</html>
