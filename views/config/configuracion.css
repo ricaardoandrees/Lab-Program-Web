@@ -1,0 +1,398 @@
+/* Variables CSS - Asegúrate de tener estas en tu archivo var.css */
+:root {
+  --primary-bg: #f8f9fa;
+  --secondary-bg: #4a6fa5;
+  --primary-button-bg: #4a6fa5;
+  --primary-hover-bg: #3a5a80;
+  --main-text-color: #333;
+  --light-text: #fff;
+  --border-color: #dee2e6;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos base responsivos */
+.config-page {
+  background-color: var(--primary-bg);
+  color: var(--main-text-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.config-header {
+  background: linear-gradient(135deg, var(--secondary-bg), var(--primary-button-bg));
+  color: var(--light-text);
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--box-shadow);
+}
+
+.config-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.config-container {
+  width: 100%;
+  flex: 1;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Navbar responsiva */
+.navbar {
+  padding: 0.5rem 1rem;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* Formularios responsivos */
+.config-form-wrapper {
+  max-width: 100%;
+  margin: 0 auto 2rem;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.config-form-wrapper h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--secondary-bg);
+}
+
+.config-form-wrapper fieldset {
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  background-color: #f9f9f9;
+}
+
+.config-form-wrapper legend {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--primary-button-bg);
+  padding: 0 0.5rem;
+}
+
+.config-form-wrapper label {
+  font-weight: 600;
+  margin-top: 1rem;
+  display: block;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.config-form-wrapper input,
+.config-form-wrapper select {
+  width: 100%;
+  padding: 0.7rem;
+  margin: 0.5rem 0 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.config-form-wrapper input:focus {
+  border-color: var(--primary-button-bg);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(74, 111, 165, 0.2);
+}
+
+.gender-options {
+  margin: 1rem 0;
+}
+
+.gender-options p {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.gender-options label {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 1.5rem;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.gender-options input[type="radio"] {
+  width: auto;
+  margin-right: 0.5rem;
+  margin-top: 0;
+}
+
+.btn-config {
+  background-color: var(--primary-button-bg);
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  width: 100%;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-config:hover {
+  background-color: var(--primary-hover-bg);
+}
+
+/* Tabla de colegas - Versión responsive */
+.colegas-section {
+  margin-top: 2rem;
+}
+
+.colegas-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--secondary-bg);
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+thead {
+  background-color: var(--primary-button-bg);
+  color: white;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+td {
+  font-size: 0.95rem;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+tbody tr:hover {
+  background-color: #e9f0f8;
+}
+
+td img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Footer responsivo */
+.footer {
+  background-color: var(--secondary-bg);
+  color: white;
+  padding: 2rem 1rem;
+  margin-top: auto;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.footer p, .footer dl {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.footer dt {
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.footer dd {
+  margin-left: 1rem;
+}
+
+/* Botón de chat flotante */
+.chat-button {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background-color: var(--primary-button-bg);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  font-size: 0.9rem;
+}
+
+.chat-button:hover {
+  background-color: var(--primary-hover-bg);
+}
+
+/* Media Queries para diferentes tamaños */
+@media (min-width: 576px) {
+  .config-header {
+    padding: 2.5rem 1rem;
+  }
+  
+  .config-header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .config-form-wrapper {
+    padding: 2rem;
+  }
+  
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .config-container {
+    padding: 0 2rem;
+  }
+  
+  .config-form-wrapper {
+    max-width: 800px;
+    padding: 2.5rem;
+  }
+  
+  .config-form-wrapper fieldset {
+    padding: 1.5rem;
+  }
+  
+  .gender-options label {
+    margin-right: 2rem;
+  }
+  
+  td img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (min-width: 992px) {
+  .config-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .config-form-wrapper {
+    max-width: 900px;
+  }
+  
+  table {
+    min-width: auto;
+  }
+  
+  td img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Estilos para cuando la tabla debe ser scroll horizontal en móviles */
+@media (max-width: 767px) {
+  .table-container {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+  }
+  
+  table {
+    margin-bottom: 0;
+  }
+  
+  th, td {
+    white-space: nowrap;
+  }
+  
+  th:first-child, td:first-child {
+    position: sticky;
+    left: 0;
+    background-color: white;
+    z-index: 1;
+  }
+  
+  tbody tr:nth-child(even) td:first-child {
+    background-color: #f8f9fa;
+  }
+  
+  tbody tr:hover td:first-child {
+    background-color: #e9f0f8;
+  }
+}
+@media (max-width: 576px) {
+  .config-header,
+  .navbar,
+  .footer {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .navbar .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .config-container {
+    padding: 0 1rem;
+  }
+}

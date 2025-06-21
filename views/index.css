@@ -1,0 +1,407 @@
+/* =====================
+   Estilos Globales
+===================== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background-color: var(--primary-bg);
+  color: var(--main-text-color);
+}
+
+/* =====================
+   Header
+===================== */
+.header {
+  background: var(--secondary-bg);
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-titles h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.header-titles h2 {
+  font-size: 1.75rem;
+  margin-top: 0.5rem;
+}
+
+/* =====================
+   Navbar
+===================== */
+.navbar {
+  margin-bottom: 1rem;
+}
+
+.navbar .nav-list {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.navbar .nav-link {
+  color: var(--main-text-color);
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar .nav-link:hover {
+  background-color: var(--primary-button-bg);
+  color: var(--main-text-color);
+}
+
+/* =====================
+   Contenedor Principal
+===================== */
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* =====================
+   Sección de Proyectos
+===================== */
+.Proyectos {
+  margin-bottom: 2rem;
+}
+
+.Proyectos h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: var(--primary-button-bg);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.project-link:hover {
+  color: var(--primary-hover-bg);
+}
+
+.project-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.project-details {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.project-video {
+  margin-top: 1rem;
+}
+
+.responsive-video {
+  width: 100%;
+  height: auto;
+}
+
+/* =====================
+   Sección de Educación
+===================== */
+.Educacion {
+  background-color: #f7f9fc;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.Educacion h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.education-card {
+  text-align: center;
+}
+
+.education-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  font-size: 1.1rem;
+}
+
+/* =====================
+   Sección de Tecnologías
+===================== */
+.Tecnologias {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.Tecnologias h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Contenedor para separar ambos bloques de tecnología */
+.Tecnologias .tech-sections {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Bloque de tecnologías en aprendizaje */
+.tech-learning {
+  flex: 1;
+  min-width: 300px;
+  /* No forzamos altura para que ocupe solo lo necesario */
+  padding: 1rem;
+}
+
+.tech-learning h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.tech-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  font-size: 1rem;
+}
+
+/* Bloque de tecnologías dominadas o aprendidas */
+.tech-dominadas {
+  flex: 1;
+  min-width: 300px;
+  padding: 1rem;
+}
+
+.tech-dominadas h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.tech-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.tech-table th,
+.tech-table td {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.tech-table th {
+  background-color: var(--primary-button-bg);
+  color: var(--main-text-color);
+  text-transform: uppercase;
+  font-size: 0.95rem;
+}
+
+/* =====================
+   Sección "Sobre mí"
+===================== */
+.Sobremi {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.Sobremi h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* =====================
+   Sección "Canción recomendada" (Sobremi-Musica)
+===================== */
+.Sobremi-Musica {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.Sobremi-Musica h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* relación 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* =====================
+   Footer
+===================== */
+.footer {
+  background-color: rgb(37, 44, 73);
+  color: var(--main-text-color);
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.footer-contact,
+.footer-definitions {
+  flex: 1;
+  min-width: 300px;
+  margin-top: 1rem;
+}
+
+.footer-contact h3,
+.footer-definitions h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* =====================
+   Chat Button
+===================== */
+.chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--primary-button-bg);
+  color: var(--main-text-color);
+  padding: 12px 18px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+
+.chat-button:hover {
+  background-color: var(--primary-hover-bg);
+}
+
+/* =====================
+   Responsive Ajustes
+===================== */
+
+/* Para pantallas medianas */
+@media (max-width: 992px) {
+  .about-content {
+    flex-direction: column;
+  }
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+  .header-titles h1 {
+    font-size: 2.5rem;
+  }
+  .header-titles h2 {
+    font-size: 1.5rem;
+  }
+  .main-container {
+    padding: 1rem;
+  }
+  .tech-table th,
+  .tech-table td {
+    padding: 0.5rem;
+  }
+  /* En la sección tecnologías, cada bloque ocupa su contenido */
+  .tech-sections {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Para móviles */
+@media (max-width: 576px) {
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+}
