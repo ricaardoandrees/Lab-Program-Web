@@ -246,7 +246,13 @@
   height: 100%;
 }
 
+.footer {
+  background-color: var(--secondary-bg);
+  color: white;
+  padding: 2rem 1rem;
+  margin-top: auto;
 
+}
 @media (max-width: 768px) {
   .tech-sections {
     flex-direction: column;
@@ -282,7 +288,7 @@
   .tech-table td {
     padding: 0.5rem;
   }
-  /* En la sección tecnologías, cada bloque ocupa su contenido */
+ 
   .tech-sections {
     flex-direction: column;
     align-items: center;

@@ -18,13 +18,13 @@ body {
   line-height: 1.6;
 }
 
-/* letras responsive */
+
 h1 { font-size: clamp(1.75rem, 5vw, 2.5rem); }
 h2 { font-size: clamp(1.5rem, 4vw, 2rem); }
 h3 { font-size: clamp(1.25rem, 3vw, 1.5rem); }
 p  { font-size: clamp(1rem, 2.5vw, 1.25rem); }
 
-/* Header */
+
 header {
   background: var(--secondary-bg);
   padding: 1rem;
@@ -168,7 +168,7 @@ textarea:focus {
   transform: scale(1.05);
 }
 
-/* Botón de chat */
+
 .chat-button {
   position: fixed;
   bottom: 20px;
@@ -188,7 +188,7 @@ textarea:focus {
   background-color: var(--primary-hover-bg);
 }
 
-/* Footer */
+
 footer {
   display: flex;
   justify-content: center;
@@ -215,7 +215,7 @@ footer {
   }
 }
 
-/* Ajustes para móviles y dispositivos pequeños (hasta 768px) */
+
 @media (max-width: 768px) {
   main {
     grid-template-columns: 1fr;
@@ -287,12 +287,12 @@ header h1:active {
     z-index: 10;
 }
 
-/* Ajustes para cards */
+
 .custom-card .card-header {
     border-bottom: none;
 }
 
-/* Clases para altura igualada */
+
 .equal-height {
     height: 100%;
     display: flex;
@@ -305,7 +305,7 @@ header h1:active {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: wrap; /* evita que se desborde en pantallas pequeñas */
+  flex-wrap: wrap;
 }
 
 .footer-contact,

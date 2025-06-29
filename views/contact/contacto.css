@@ -106,6 +106,13 @@ textarea.form-control {
     background-color: var(--primary-hover-bg);
     transform: translateY(-2px);
 }
+.footer {
+  background-color: var(--secondary-bg);
+  color: white;
+  padding: 2rem 1rem;
+  margin-top: auto;
+
+}
 
 /* Responsive */
 @media (max-width: 768px) {
